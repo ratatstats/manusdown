@@ -1,44 +1,63 @@
 ---
-author: 'Your R. Name'
-date: 'May 20xx'
+author: 'My Name'
+thesisdate: 'March 22, 2019'
+degreemonth: 'June'
+degreeyear: '2019'
 institution: 'Massachusetts Institute of Technology'
-division: 'Computational and Systems Biology'
-advisor: 'Advisor F. Name'
-# If you have more two advisors, un-silence line 7
-#altadvisor: 'Your Other Advisor'
-department: 'Mathematics'
+chairmanname: 'Head Honcho'
+chairmantitle: 'Director, Computational and Systems Biology Graduate Program'
+supervisor: 'Alice Advisor'
+supervisortitle: 'Professor, Civil & Environmental Engineering'
+# altadvisor: ''
+# altadvisortitle: ''
+# Delete line 11 if you only have one advisor
+committeeonename: 'Bobert Bananas'
+committeeonerole: 'Chairman, Thesis Committee'
+committeeonetitle: 'Professor of Biology'
+committeetwoname: 'Candace Cantaloupe'
+committeetworole: 'Member, Thesis Committee'
+committeetwotitle: 'Associate Professor of Physics'
+committeethreename: 'Daisy Dragonfruit'
+committeethreerole: 'External Member, Thesis Committee'
+committeethreetitle: 'Assistant Professor, Biology, Boston University'
+department: 'Program in Computational and Systems Biology'
 degree: 'Doctor of Philosophy'
-title: 'My Thesis'
+prevdegrees: 'B.A., Statistics, University of California, Berkeley (2011)'
+title: 'Statistically Inferring the Mechanisms of Phage-Host Interactions'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-#  manusdown::thesis_pdf: default
-  manusdown::thesis_gitbook: default
-#  manusdown::thesis_word: default
-#  manusdown::thesis_epub: default
-# If you are creating a PDF you'll need to write your preliminary content (e.g., abstract, acknowledgements) here or
-# use code similar to line 22-23 for the .RMD files. If you are NOT producing a PDF, you can delete or silence lines 21-32 in this YAML header.
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 20 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
+signature: |
 abstract: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab is 
-# needed on the line after the `|`.
-acknowledgements: |
-  I want to thank a few people.
-dedication: |
-  You can have a dedication here if you wish. 
-preface: |
-  This is an example of a thesis setup to use the reed thesis document class
-  (for LaTeX) and the R bookdown package, in general.
-# Specify the location of the bibliography below
+# needed on the line after the |.
+# acknowledgements: |
+#   I'd like to thank a few people.
+# dedication: |
+#   You can have a dedication here if you wish. 
+# preface: |
+#   This is an example of a thesis setup to use the reed thesis document class
+#   (for LaTeX) and the R bookdown package, in general.
 bibliography: bib/thesis.bib
-# Download your specific csl file and refer to it in the line below.
+# Download your specific bibliography database file and refer to it in the line above.
 csl: csl/springer-basic-brackets.csl
-lot: true
+# Download your specific csl file and refer to it in the line above.
+lot: false
 lof: true
-# If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
-#header-includes:
-#- \usepackage{tikz}
+#space_between_paragraphs: true
+# Delete the # at the beginning of the previous line if you'd like
+# to have a blank new line between each paragraph
+header-includes:
+- \usepackage{tikz} \usetikzlibrary{arrows} \usetikzlibrary{decorations.pathreplacing} \usetikzlibrary{shapes}
 ---
 
 <!--
