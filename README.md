@@ -1,4 +1,4 @@
-# thesisdown
+# manusdown
 
 This project was inspired by the [bookdown](https://github.com/rstudio/bookdown) package and is an updated version of Chester Ismay's Senior Thesis template in the `reedtemplates` package [here](https://github.com/ismayc/reedtemplates).
 

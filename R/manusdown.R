@@ -1,4 +1,4 @@
-#' thesisdown: A package for creating undergraduate, Masters, and PhD theses
+#' manusdown: A package for creating undergraduate, Masters, and PhD theses
 #'using R Markdown
 #'
 #'

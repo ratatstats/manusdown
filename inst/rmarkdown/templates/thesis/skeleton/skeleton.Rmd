@@ -54,13 +54,13 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 -->
 
 ```{r include_packages, include = FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
+# This chunk ensures that the manusdwon package is
+# installed and loaded. This manusdown package includes
 # the template files for the thesis.
 if(!require(devtools))
   install.packages("devtools", repos = "http://cran.rstudio.com")
 if(!require(manusdown))
-  devtools::install_github("ismayc/thesisdown")
+  devtools::install_github("ratatstats/manusdown")
 library(manusdown)
 ```
 

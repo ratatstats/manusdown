@@ -1,4 +1,4 @@
-Package: thesisdown
+Package: manusdown
 Title: An updated R Markdown thesis template using the bookdown package
 Version: 0.0.2
 Authors@R: c(

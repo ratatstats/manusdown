@@ -1,3 +1,7 @@
+# manusdown
+
+- MIT template
+
 # thesisdown 0.0.2
 
 - Changed default filename (in directions) to be `index` instead of `skeleton` to match with gitbook requirements
