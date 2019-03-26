@@ -13,9 +13,9 @@ if(!require(ggplot2))
     install.packages("bookdown", repos = "http://cran.rstudio.com")
 if(!require(thesisdown)){
   library(devtools)
-  devtools::install_github("ismayc/thesisdown")
+  devtools::install_github("ratatstats/manusdown")
   }
-library(thesisdown)
+library(manusdown)
 flights <- read.csv("data/flights.csv")
 ```
 

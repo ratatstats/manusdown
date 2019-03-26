@@ -1,21 +1,21 @@
 ---
 author: 'Your R. Name'
 date: 'May 20xx'
-institution: 'Reed College'
-division: 'Mathematics and Natural Sciences'
+institution: 'Massachusetts Institute of Technology'
+division: 'Computational and Systems Biology'
 advisor: 'Advisor F. Name'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
 department: 'Mathematics'
-degree: 'Bachelor of Arts'
-title: 'My Final College Paper'
+degree: 'Doctor of Philosophy'
+title: 'My Thesis'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-#  thesisdown::thesis_pdf: default
-  thesisdown::thesis_gitbook: default
-#  thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
+#  manusdown::thesis_pdf: default
+  manusdown::thesis_gitbook: default
+#  manusdown::thesis_word: default
+#  manusdown::thesis_epub: default
 # If you are creating a PDF you'll need to write your preliminary content (e.g., abstract, acknowledgements) here or
 # use code similar to line 22-23 for the .RMD files. If you are NOT producing a PDF, you can delete or silence lines 21-32 in this YAML header.
 abstract: |
@@ -33,7 +33,7 @@ preface: |
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib
 # Download your specific csl file and refer to it in the line below.
-csl: csl/apa.csl
+csl: csl/springer-basic-brackets.csl
 lot: true
 lof: true
 # If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
@@ -59,9 +59,9 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 # the template files for the thesis.
 if(!require(devtools))
   install.packages("devtools", repos = "http://cran.rstudio.com")
-if(!require(thesisdown))
+if(!require(manusdown))
   devtools::install_github("ismayc/thesisdown")
-library(thesisdown)
+library(manusdown)
 ```
 
 <!-- On ordering the chapter files:
