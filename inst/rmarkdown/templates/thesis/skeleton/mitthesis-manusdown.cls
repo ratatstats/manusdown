@@ -375,10 +375,7 @@
 \def\@approvedforthe{Division}
 \def\supervisor#1#2{\gdef \@supervisorname{#1}\gdef \@supervisortitle{#2}}
 \def\@supervisor{\@latex@warning@no@line{No \noexpand\supervisor given}}
-\def\altadvisor#1{\gdef \@altadvisor{#1} \@altadvisortrue}
-\global\let\@altadvisor\@empty
-\newif\if@altadvisor
-\@altadvisorfalse
+
 
 % The copyright notice stuff is a tremendous mess.
 %
@@ -521,7 +518,7 @@
   \@copyrightnotice
   \par
   \vskip 3\baselineskip
-  \signature{Author}{\@department \\ \@thesisdate}
+  \signature{Author}{\@author \\ \@department \\ \@thesisdate}
   \par
   \vfill
   \signature{Certified by}{\@supervisorname \\ \@supervisortitle \\ Thesis Supervisor}
