@@ -1,30 +1,14 @@
-% This is the Reed College LaTeX thesis template. Most of the work
-% for the document class was done by Sam Noble (SN), as well as this
-% template. Later comments etc. by Ben Salzberg (BTS). Additional
-% restructuring and APA support by Jess Youngberg (JY).
-% Your comments and suggestions are more than welcome; please email
-% them to cus@reed.edu
-%
-% See http://web.reed.edu/cis/help/latex.html for help. There are a
-% great bunch of help pages there, with notes on
-% getting started, bibtex, etc. Go there and read it if you're not
-% already familiar with LaTeX.
-%
-% Any line that starts with a percent symbol is a comment.
-% They won't show up in the document, and are useful for notes
-% to yourself and explaining commands.
-% Commenting also removes a line from the document;
-% very handy for troubleshooting problems. -BTS
-
-% As far as I know, this follows the requirements laid out in
-% the 2002-2003 Senior Handbook. Ask a librarian to check the
-% document before binding. -SN
-
 %%
 %% Preamble
 %%
-% \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,twoside]{reedthesis}
+\documentclass[12pt,twoside]{mitthesis2}
+\usepackage{lgrind}
+%% These have been added at the request of the MIT Libraries, because
+%% some PDF conversions mess up the ligatures.  -LB, 1/22/2014
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\pagestyle{plain}
+
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -61,6 +45,13 @@
 \def\subsectionautorefname{Subsection}
 % End of CII addition
 
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,      
+	urlcolor=blue,
+}
+
 % Added by CII
 \usepackage{caption}
 \captionsetup{width=5in}
@@ -77,17 +68,26 @@ $endif$
 \title{$title$}
 \author{$author$}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{$date$}
-\division{$division$}
-\advisor{$advisor$}
-\institution{$institution$}
+\thesisdate{$thesisdate$}
+\degreemonth{$degreemonth$}
+\degreeyear{$degreeyear$}
+
+$if(prevdegrees)$
+\prevdegrees{$prevdegrees$}
+$endif$
+
+\supervisor{$supervisor$}{$supervisortitle$}
 \degree{$degree$}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
 $if(altadvisor)$
-\altadvisor{$altadvisor$}
+\altadvisor{$altadvisor$}{$altadvisortitle$}
 $endif$
 % End of CII addition
+\chairman{$chairmanname$}{$chairmantitle$}
+\committeeone{$committeeonename$}{$committeeonerole$}{$committeeonetitle$}
+\committeetwo{$committeetwoname$}{$committeetworole$}{$committeetwotitle$}
+\committeethree{$committeethreename$}{$committeethreerole$}{$committeethreetitle$}
 
 %%% Remember to use the correct department!
 \department{$department$}
@@ -98,6 +98,7 @@ $endif$
 % if you want the approval page to say "Approved for the Committee",
 % uncomment the next line
 %\approvedforthe{Committee}
+
 
 % Added by CII
 %%% Copied from knitr
@@ -154,13 +155,18 @@ $endfor$
 
 \begin{document}
 
+
+\pagestyle{plain}
 % Everything below added by CII
 $if(title)$
   \maketitle
 $endif$
 
-\frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
+$if(abstract)$
+\begin{abstract}
+	$abstract$
+\end{abstract}
+$endif$
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -188,20 +194,13 @@ $if(lof)$
   \listoffigures
 $endif$
 
-$if(abstract)$
-  \begin{abstract}
-    $abstract$
-  \end{abstract}
-$endif$
-
 $if(dedication)$
   \begin{dedication}
     $dedication$
   \end{dedication}
 $endif$
 
-\mainmatter % here the regular arabic numbering starts
-\pagestyle{fancyplain} % turns page numbering back on
+\raggedbottom
 
 $body$
 
