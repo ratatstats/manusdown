@@ -2,10 +2,8 @@ Package: manusdown
 Title: An updated R Markdown thesis template using the bookdown package
 Version: 0.0.2
 Authors@R: c(
-    person("Joy","Yang",email = "yangjy@mit.edu", role = "aut"),
-    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
-Description: Using the bookdown package and LaTeX and Word thesis templates from
+    person("Joy","Yang",email = "yangjy@mit.edu", role = "aut"))
+Description: Using the thesisdown package and LaTeX and templates from MIT and
     Reed College, this package aims to encourage reproducible research using
     simple Markdown syntax while embedding all of the R code to produce plots
     and analyses as well.

@@ -1,16 +1,17 @@
 # manusdown
 
-This project was inspired by the [bookdown](https://github.com/rstudio/bookdown) package and is an updated version of Chester Ismay's Senior Thesis template in the `reedtemplates` package [here](https://github.com/ismayc/reedtemplates).
+This project was based off of [thesisdown](https://github.com/ismayc/thesisdown). The template is based on the [MIT LaTeX template](http://web.mit.edu/thesis/tex/) and the Reed College LaTeX template. As noted on the MIT Thesis page, you should always consult the [MIT Libraries Thesis Specifications](http://libraries.mit.edu/archives/thesis-specs/) before submitting your thesis. Because I used this for writing my own thesis, while this template adheres to the MIT Thesis template, it is rather hacked together quickly, and there is much room for improvement. If you have suggestions/would like to push your changes, please get in touch! My email (for the time being) is yangjy [ at ] mit
 
 Currently, the PDF and gitbook versions are fully-functional.  The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.
 
 If you are new to working with `bookdown`/`rmarkdown`, please read over the documentation available in the `gitbook` template at https://thesisdown.netlify.com/.  This is also available below at https://ismayc.github.io/thesisdown_book.
 
-The current output for the four versions is here:
-- [PDF](https://github.com/ratatstats/manusdown_book/blob/gh-pages/thesis.pdf) (Generating LaTeX file is available [here](https://github.com/ratatstats/manusdown_book/blob/gh-pages/thesis.tex) with other files at in the [book directory](https://github.com/ratatstats/manusdown_book/tree/gh-pages).)
-- [Word](https://github.com/ratatstats/manusdown_book/blob/gh-pages/thesis.docx)
-- [ePub](https://github.com/ratatstats/manusdown_book/blob/gh-pages/thesis.epub)
-- [gitbook](https://ratatstats.github.io/manusdown_book)
+As an example, a copy of my thesis is currently available [here](https://github.com/ratatstats/thesis/thesis.pdf).
+
+The current output for three of the four versions is here:
+- [PDF](https://github.com/ratatstats/manusdown_book/thesis.pdf)
+- [Word](https://github.com/ratatstats/manusdown_book/thesis.docx)
+- [ePub](https://github.com/ratatstats/manusdown_book/thesis.epub)
 
 Under the hood, the Reed College LaTeX template is used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight [markdown](https://rmarkdown.rstudio.com/authoring_basics.html) syntax, and **R** code and its output can be seamlessly included using [rmarkdown](https://rmarkdown.rstudio.com).
 
