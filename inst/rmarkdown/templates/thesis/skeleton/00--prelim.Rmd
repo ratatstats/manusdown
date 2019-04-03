@@ -2,7 +2,7 @@
 
 ## Acknowledgements {-}
 
-I want to thank a few people.
+I want to thank Chester Ismay for thesisdown and the MIT Thesis team and the Libraries for the MIT LaTeX template.
 
 ## Preface {-}
 

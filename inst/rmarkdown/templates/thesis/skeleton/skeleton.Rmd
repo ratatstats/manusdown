@@ -1,40 +1,32 @@
 ---
-author: 'My Name'
-thesisdate: 'March 22, 2019'
+author: 'Lucien William Van Elsen'
+thesisdate: 'May 18, 2019'
 degreemonth: 'June'
 degreeyear: '2019'
 institution: 'Massachusetts Institute of Technology'
-chairmanname: 'Head Honcho'
-chairmantitle: 'Director, Computational and Systems Biology Graduate Program'
-supervisor: 'Alice Advisor'
-supervisortitle: 'Professor, Civil & Environmental Engineering'
-# altadvisor: ''
-# altadvisortitle: ''
-# Delete line 11 if you only have one advisor
-committeeonename: 'Bobert Bananas'
+# The following is the department committee chairman, not the thesis committee chairman.
+# You should replace this with your Department's Committee Chairman.
+chairmanname: 'Arthur C. Smith'
+chairmantitle: 'Chairman, Department Committee on Graduate Theses'
+# Apologies, this template currently supports one supervisor.
+# Please feel free to modify this and push the change!
+supervisor: 'William J. Dally'
+supervisortitle: 'Associate Professor, Civil & Environmental Engineering'
+committeeonename: 'Jianshu Cao'
 committeeonerole: 'Chairman, Thesis Committee'
-committeeonetitle: 'Professor of Biology'
-committeetwoname: 'Candace Cantaloupe'
-committeetworole: 'Member, Thesis Committee'
-committeetwotitle: 'Associate Professor of Physics'
-committeethreename: 'Daisy Dragonfruit'
-committeethreerole: 'External Member, Thesis Committee'
-committeethreetitle: 'Assistant Professor, Biology, Boston University'
-department: 'Program in Computational and Systems Biology'
+committeeonetitle: 'Professor of Chemistry'
+committeetwoname: 'Troy Van Voorhis'
+committeetworole: 'Thesis Supervisor'
+committeetwotitle: 'Associate Professor of Chemistry'
+committeethreename: ' Robert W. Field'
+committeethreerole: 'Member, Thesis Committee'
+committeethreetitle: 'Haslam and Dewey Professor of Chemistry'
+department: 'Department of Electrical Engineering and Computer Science'
 degree: 'Doctor of Philosophy'
 prevdegrees: 'B.A., Statistics, University of California, Berkeley (2011)'
-title: 'Statistically Inferring the Mechanisms of Phage-Host Interactions'
+title: 'An Optimizing Compiler for Low-Level Floating Point Operations'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
-output: 
-  thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
-#  thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
-# If you are creating a PDF you'll need to write your preliminary content here or
-# use code similar to line 20 for the files.  If you are producing in a different
-# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
-signature: |
 abstract: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
 # If you'd rather include the preliminary content in files instead of inline
@@ -45,19 +37,20 @@ abstract: |
 # dedication: |
 #   You can have a dedication here if you wish. 
 # preface: |
-#   This is an example of a thesis setup to use the reed thesis document class
-#   (for LaTeX) and the R bookdown package, in general.
 bibliography: bib/thesis.bib
-# Download your specific bibliography database file and refer to it in the line above.
 csl: csl/springer-basic-brackets.csl
-# Download your specific csl file and refer to it in the line above.
 lot: false
 lof: true
-#space_between_paragraphs: true
-# Delete the # at the beginning of the previous line if you'd like
-# to have a blank new line between each paragraph
-header-includes:
-- \usepackage{tikz} \usetikzlibrary{arrows} \usetikzlibrary{decorations.pathreplacing} \usetikzlibrary{shapes}
+output: 
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
+#  thesisdown::thesis_word: default
+#  thesisdown::thesis_epub: default
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 20 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 20-31 in this YAML header.
+# header-includes:
+# - \usepackage{tikz} \usetikzlibrary{arrows} \usetikzlibrary{decorations.pathreplacing} \usetikzlibrary{shapes}
 ---
 
 <!--
@@ -97,13 +90,11 @@ on chapters.
 
 # Introduction {.unnumbered}
 
-Welcome to the _R Markdown_ thesis template. This template is based on (and in many places copied directly from) the Reed College LaTeX template, but hopefully it will provide a nicer interface for those that have never used TeX or LaTeX before.  Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well.  The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
+Welcome to the _R Markdown_ thesis template. This template is based on the MIT LaTeX template and the Reed College LaTeX template. As noted on the [MIT Thesis page](http://web.mit.edu/thesis/tex/), you should always consult the [MIT Libraries Thesis Specifications](http://libraries.mit.edu/archives/thesis-specs/) before submitting your thesis. Because I used this for writing my own thesis, while this template adheres to the MIT Thesis template, it is rather hacked together quickly, and there is much room for improvement. If you have suggestions/would like to push your changes, please get in touch! My email (for the time being) is yangjy [ at ] mit
+
+Using _R Markdown_ will also allow you to easily keep track of your analyses in **R** chunks of code, with the resulting plots and output included as well.  The hope is this _R Markdown_ template gets you in the habit of doing reproducible research, which benefits you long-term as a researcher, but also will greatly help anyone that is trying to reproduce or build onto your results down the road.
 
 Hopefully, you won't have much of a learning period to go through and you will reap the benefits of a nicely formatted thesis.  The use of LaTeX in combination with _Markdown_ is more consistent than the output of a word processor, much less prone to corruption or crashing, and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is likely going to be about twice as large and complex as anything you've written before, taxing Word's capabilities.  After working with _Markdown_ and **R** together for a few weeks, we are confident this will be your reporting style of choice going forward.
-
-<!-- 
-If you're still on the fence about using _R Markdown_, check out the resource for newbies available at <https://ismayc.github.io/rbasics-book/> or email us at <data@reed.edu>. 
--->
 
 **Why use it?**
 
