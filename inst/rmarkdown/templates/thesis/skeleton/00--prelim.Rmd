@@ -1,16 +1,14 @@
-# Preliminary Content {-}
-
-## Acknowledgements {-}
+# Acknowledgements {-}
 
 I want to thank Chester Ismay for thesisdown and the MIT Thesis team and the Libraries for the MIT LaTeX template.
 
-## Preface {-}
+# Preface {-}
 
 This is an example of a thesis setup to use the reed thesis document class
 (for LaTeX) and the R bookdown package, in general.
 
-## Dedication {-}
+# Dedication {-}
 
 You can have a dedication here if you wish. 
 
-`r if(!knitr:::is_latex_output()) '## Abstract {-}'`
+
