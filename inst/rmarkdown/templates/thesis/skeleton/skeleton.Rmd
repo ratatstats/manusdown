@@ -74,6 +74,7 @@ if(!require(devtools))
 if(!require(manusdown))
   devtools::install_github("ratatstats/manusdown")
 library(manusdown)
+knitr::opts_chunk$set(fig.pos = 'tb!', fig.align = "center")
 ```
 
 <!-- On ordering the chapter files:
