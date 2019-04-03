@@ -9,9 +9,9 @@ If you are new to working with `bookdown`/`rmarkdown`, please read over the docu
 As an example, a copy of my thesis is currently available [here](https://github.com/ratatstats/thesis/thesis.pdf).
 
 The current output for three of the four versions is here:
-- [PDF](https://github.com/ratatstats/manusdown_book/thesis.pdf)
-- [Word](https://github.com/ratatstats/manusdown_book/thesis.docx)
-- [ePub](https://github.com/ratatstats/manusdown_book/thesis.epub)
+- [PDF](https://github.com/ratatstats/manusdown_book/blob/master/thesis.pdf)
+- [Word](https://github.com/ratatstats/manusdown_book/blob/master/thesis.docx)
+- [ePub](https://github.com/ratatstats/manusdown_book/blob/master/thesis.epub)
 
 Under the hood, the Reed College LaTeX template is used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight [markdown](https://rmarkdown.rstudio.com/authoring_basics.html) syntax, and **R** code and its output can be seamlessly included using [rmarkdown](https://rmarkdown.rstudio.com).
 
