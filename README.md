@@ -6,7 +6,7 @@ Currently, the PDF and gitbook versions are fully-functional.  The word and epub
 
 If you are new to working with `bookdown`/`rmarkdown`, please read over the documentation available in the `gitbook` template at https://thesisdown.netlify.com/.  This is also available below at https://ismayc.github.io/thesisdown_book.
 
-As an example, a copy of my thesis is currently available [here](https://github.com/ratatstats/thesis/blob/master/_book/thesis.pdf).
+As an example, a copy of my thesis is currently available at [ratatstats/thesis](https://github.com/ratatstats/thesis), the pdf is available [here](https://github.com/ratatstats/thesis/blob/master/_book/thesis.pdf).
 
 The current output for three of the four versions is here:
 - [PDF](https://github.com/ratatstats/manusdown_book/blob/master/thesis.pdf)
